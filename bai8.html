@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=new Array(10)
+    for (let i=0;i<arr.length;i++){
+        arr[i]=+prompt('Nhap so thu '+i)
+    }
+    document.write('Day so ban vua nhap la '+arr+'<br>')
+    arr.sort(function(a,b){
+        return(b-a);
+    })
+    document.write('Day so sau khi sap xep la '+arr)
+</script>
+</body>
+</html>

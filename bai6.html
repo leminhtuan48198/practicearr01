@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr=new Array(10);
+  for(let i=0;i<arr.length;i++){
+      arr[i]=+prompt('Nhap so nguyen thu '+i)
+  }
+  document.write(arr+'<br>')
+  let value=+prompt('Nhap so nguyen V');
+  document.write('V= '+value+'<br>')
+  if(arr.indexOf(value)==-1){
+      document.write('V is not in the array')
+  } else {
+      document.write('V is in the array')
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrA= new Array(10);
+    let arrB= new Array(10);
+    let arrC= new Array(20);
+    for(let i=0;i<arrA.length;i++){
+        arrA[i]=+prompt('Nhap phan tu thu '+i+' cua mang a')
+    }
+    document.write('Mang a: '+'<br>'+arrA+'<br>')
+    for(let i=0;i<arrB.length;i++){
+        arrB[i]=+prompt('Nhap phan tu thu '+i+' cua mang b')
+    }
+    document.write('Mang b: '+'<br>'+arrB+'<br>')
+    arrC.splice(0,20,arrA,arrB)
+    document.write('Mang c: '+'<br>'+arrC+'<br>')
+</script>
+</body>
+</html>

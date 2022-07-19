@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=[23,34,545,2,237,34,234,534,546,4]
+    let max=arr[0]
+    let count=0
+    for (let i=1;i<arr.length;i++) {
+        if(max<arr[i]){
+            max=arr[i]
+            count=i
+        }
+    }
+    document.write(arr+'<br>')
+    document.write('max= '+max+'. O vi tri '+count)
+</script>
+</body>
+</html>
